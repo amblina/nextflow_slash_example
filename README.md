@@ -1,4 +1,6 @@
-When I echo `"${cwd}/${bam}"` then the value of `$cwd` is lost and only the value of `${bam}` is echoed whereas when `${cwd}` and `${bam}` are concatenated with a '-' as opposed to '/' it works as expected. Please see the example below (command output):
+If two variables are concatenated with a '-' vs a '/' the output behaves differently than expected. This example is contrived from another workflow I'm working on involving bam files - but ignore that!
+
+When I echo `"${cwd}/${bam}"` then the value of `$cwd` is lost and only the value of `${bam}` is echoed whereas when `${cwd}` and `${bam}` are concatenated with a '-' as opposed to '/' it works as expected. Please see the example output below (can be found in command output in the example at the bottom):
 
 ```
   cwd: /Users/awright/docker/2107/wf-example/work/ef/94b684b030af7b23891564224a5087
