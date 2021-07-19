@@ -1,5 +1,7 @@
 input:
+```
 nextflow main2.nf -c nextflow_example.config
+```
 output:
 ```
 N E X T F L O W  ~  version 20.10.0
