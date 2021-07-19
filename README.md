@@ -1,3 +1,13 @@
+When I echo `"${cwd}/${bam}"` then the value of `$cwd` is lost and only the value of `${bam}` is echoed whereas when `${cwd}` and `${bam}` are concatenated with a '-' as opposed to '/' it works as expected. Please see the example below (command output):
+
+```
+  cwd: /Users/awright/docker/2107/wf-example/work/ef/94b684b030af7b23891564224a5087
+  BAM_WITH_SLASH: my_example_file.txt
+  BAM_WITH_DASH: /Users/awright/docker/2107/wf-example/work/ef/94b684b030af7b23891564224a5087-my_example_file.txt
+```
+
+To reproduce this, you can run the following. I have also included the full nextflow output for ease.
+
 input:
 ```
 nextflow main2.nf -c nextflow_example.config
