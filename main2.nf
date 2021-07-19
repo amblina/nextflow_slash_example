@@ -17,6 +17,7 @@ process run_test {
         echo ' --------------------'
         echo '| cat the files..    |'
         echo ' --------------------'
+        cat `which test.sh`
         cat `which test.sh` > example.log
         exit 1
         """
